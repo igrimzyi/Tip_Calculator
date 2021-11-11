@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\miche\OneDrive\Desktop\TipCalc\Tip_Calculator\styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Roboto+Mono&display=swap');
+    </style>
+    
+</head>
+<body>
+
+        <div id="logo">
+        <img src="C:\Users\miche\OneDrive\Desktop\mockLogo.svg" alt="">
+        </div>
+            
+    <div class= "box">
+        <div class="leftContent">
+            <div id="billPrice">
+                <h6 >Bill</h6>
+                <input type="input" placeholder="0"name="" id="initialPrice">
+            </div>
+             <div id = "tipBox" >
+                <h6 id="tipHeader">Select Tip %</h6>
+                <button class="buttonTip" value="5" >5%</button>
+                <button class="buttonTip" value="10" >10%</button>
+                <button class="buttonTip" value="15" >15%</button>
+                <button class="buttonTip" value="25" >25%</button>
+                <button class="buttonTip" value="50" >50%</button>
+                <input  class="buttonTip" id="custom"  type="text" placeholder="Custom">
+            </div>
+            <div>
+                <h6 >Number of People</h6>
+                <input type="text" name="" id="numPeople" placeholder="0">
+            </div>
+        </div> 
+
+        <div class="rightContent">
+            <div id="tipAmountSpan">
+                 <div id="tipAmountPerson">
+                     <h6 id="tipAmount" >Tip Amount</h6>
+                    <p>/ person</p>
+                 </div>
+                <h2 class="amountTipPerson">$0.00</h2>
+            </div>
+         <div id="totAmountSpan">
+             <div id="totalAmountPerson">
+                <h6 >Total</h6>
+                <p>/ person</p>
+             </div>
+              <h2 class="amountTotPerson">$0.00</h2>
+            </div>
+         <button id="reset">RESET</button>
+          <span> 
+     </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

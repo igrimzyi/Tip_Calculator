@@ -1,0 +1,275 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+   display: flex;
+   justify-content: center;
+   margin: 9%;
+}
+body{
+   background-color:hsl(185, 41%, 84%);
+   font-size: 24px;
+   font-family: 'Raleway', sans-serif;
+   font-family: 'Roboto Mono', monospace;
+   display: flex;
+    display: inline-block;
+   justify-content: center;
+   }
+
+
+.box{
+    
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 2%;
+    padding: 2rem;
+    width: 57rem;
+    
+}
+.buttonTip{
+    margin: .25rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: 7rem;
+    height: 3rem;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 7%;
+    transition: background-color .25s, color .25s, transform .25s;
+}
+
+
+#initialPrice{
+    text-align:right;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 2rem;
+    
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 4%;
+    width: 22rem;
+    height: 3rem;
+}
+#custom{
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    text-align: center;
+}
+
+#tipBox{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 25rem;
+    height: 10rem;
+
+}
+#numPeople{
+    text-align:right;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 2rem;
+    
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 4%;
+    width: 22rem;
+    height: 3rem;
+}
+.rightContent{
+    background-color: hsl(183, 100%, 15%);
+    color:hsl(172, 67%, 45%);
+    padding: 2rem;
+     margin: 1rem;
+    border-radius: 2%;
+    height: 22rem;
+    
+}
+
+p{
+    width: 10rem;
+    font-size: .75rem;
+    margin-top: .25rem;
+    margin-right: 12rem;
+    color: hsl(185, 41%, 84%);
+
+}
+.rightContent h6{
+    color: hsl(0, 0%, 100%);
+    width: 10rem;
+    font-size: 1rem;
+    margin-bottom:0rem  ;
+    margin-right: 12rem;
+}
+#tipAmountSpan{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+#totAmountSpan{
+    
+    display: flex;
+    justify-content: space-between;
+    }
+#reset{
+    padding: .7rem 9rem .7rem 9rem;
+    border-radius: 3%;
+    background-color:hsl(172, 67%, 45%);
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    border: none;
+    color:hsl(183, 100%, 15%) ;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top:8rem ;
+    transition: background-color .25s, color .25s, transform .25s;
+}
+#tipAmountPerson{
+    width: 12rem;
+    padding: 0rem 0rem 3rem 0rem;
+}
+#totalAmountPerson{
+    width: 12rem;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.leftContent h6{
+    margin-bottom: .75rem;
+    margin-top: 1.5rem;
+    color: hsl(184, 14%, 56%);
+    width: 20rem;
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+
+.buttonTip:hover{
+    cursor: pointer;
+    color:hsl(183, 100%, 15%) ;
+    background-color:  hsl(185, 41%, 84%);
+    
+}
+#reset:hover{
+    cursor: pointer;
+    color:hsl(183, 100%, 15%) ;
+    background-color:  hsl(185, 41%, 84%);
+}
+@media (max-width: 375px) {
+    body{
+        margin-top: 0rem;
+    }
+    html{
+        align-items: top;
+    }
+    #initialPrice{
+        width: 19rem;
+    }
+    #numPeople{
+        width: 19rem;
+    }
+    #tipBox{
+        padding: 1rem 0rem 1rem 0rem;
+        width: 20rem;
+        justify-content: space-evenly;
+
+    }
+    .buttonTip{
+       width: 6rem;
+    }
+    .box{
+        display: inline-block;
+        width: 20rem;
+    }
+    .rightContent{
+        width: 15rem;
+        height: 9rem;
+        
+        
+    }
+    h2{
+        font-size: 2rem;
+    }
+    #tipAmountPerson{
+        width: 2rem;
+        
+    }
+    #totalAmountPerson{
+        width: 2rem;
+    }
+    #tipAmountSpan{
+        height: 4rem;
+        margin-top: 0rem;
+    }
+    .rightContent h6{
+        padding: 0rem;
+        margin-right: 3rem;
+        
+    }
+    #reset{
+        width: 15rem;
+        padding:.7rem 4rem .7rem 4rem ;
+        margin-top: 1rem;
+    }
+}
+.clicked{
+    background-color:hsl(185, 41%, 84%) ;
+    color: hsl(183, 100%, 15%);
+}
