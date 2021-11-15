@@ -212,6 +212,34 @@ h2{
     color:hsl(183, 100%, 15%) ;
     background-color:  hsl(185, 41%, 84%);
 }
+@media (max-width:1000px) {
+    /* html{
+        width: 50rem;
+        display: flex;
+        justify-content: center;
+    } */
+
+   
+    
+    #tipBox{
+        width: 17em;
+    }
+    .box{
+        width: 22rem;
+        display: inline-block;
+    }
+    #tipAmountPerson{
+        width: 8rem;
+    }
+    #totalAmountPerson{
+        width: 8rem;
+    }
+    #reset{
+        
+        padding: .7rem 6.5rem .7rem 6.5rem;
+    }
+    
+}
 @media (max-width: 375px) {
     body{
         margin-top: 0rem;
@@ -273,3 +301,4 @@ h2{
     background-color:hsl(185, 41%, 84%) ;
     color: hsl(183, 100%, 15%);
 }
+
