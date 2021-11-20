@@ -4,11 +4,26 @@ const tipInput = document.querySelectorAll(".buttonTip");
 
 const replaceAmount = document.getElementsByClassName("amountTipPerson");
 
-for(let input of tipInput){
-    input.addEventListener("click", function(){
-   console.log(input.value)
+tipInput.forEach(button => {
+    button.addEventListener('click' , function(){
+        button.classList.add('clicked');
     })
+});
+
+for(let button of tipInput){
+    button.addEventListener("click", function(){
+        
+        button.classList.add('clicked');
+    })
+    }
+for(let button of tipInput){
+button.addEventListener("onclick", function(){
+    
+    button.classList.add('.clicked');
+})
 }
+
+
 billInput.addEventListener("input", function(){
 billPrice = billInput.value;
 console.log(parseInt(billPrice));
