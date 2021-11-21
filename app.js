@@ -5,23 +5,13 @@ const tipInput = document.querySelectorAll(".buttonTip");
 const replaceAmount = document.getElementsByClassName("amountTipPerson");
 
 tipInput.forEach(button => {
-    button.addEventListener('click' , function(){
-        button.classList.add('clicked');
+    button.addEventListener('click' , function(event){
+        button.classList.remove('clicked');
+         if (event.target.innerHTML == button.innerHTML){
+            button.classList.add('clicked');
+        }
     })
 });
-
-for(let button of tipInput){
-    button.addEventListener("click", function(){
-        
-        button.classList.add('clicked');
-    })
-    }
-for(let button of tipInput){
-button.addEventListener("onclick", function(){
-    
-    button.classList.add('.clicked');
-})
-}
 
 
 billInput.addEventListener("input", function(){
