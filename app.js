@@ -7,11 +7,13 @@ const replaceAmount = document.getElementsByClassName("amountTipPerson");
 
 tipInput.forEach(button => {
     button.addEventListener('click' , function(event){
-        button.classList.remove('clicked');
-         if (event.target.innerHTML == button.innerHTML){
-            button.classList.add('clicked');
+       button.classList.add('clicked');
+        if (event.target.classList == button.classList){
+            console.log('clicked')
             button.classList.remove('clicked');
+            
         }
+        
     })
 });
 
